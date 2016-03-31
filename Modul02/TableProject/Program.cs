@@ -27,6 +27,8 @@ namespace TableProject
 				  table [_index, (int) ti.godini] + " г."
 			);
 
+			Console.ReadKey ();
+
 		}
 
 	}
