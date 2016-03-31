@@ -1,0 +1,5 @@
+D:\aula\primeri.csharp.terminal\Modul02\Zadacha1Urok06\bin\Debug\Zadacha1Urok06.exe
+D:\aula\primeri.csharp.terminal\Modul02\Zadacha1Urok06\bin\Debug\Zadacha1Urok06.pdb
+D:\aula\primeri.csharp.terminal\Modul02\Zadacha1Urok06\obj\x86\Debug\Zadacha1Urok06.exe
+D:\aula\primeri.csharp.terminal\Modul02\Zadacha1Urok06\obj\x86\Debug\Zadacha1Urok06.pdb
+D:\aula\primeri.csharp.terminal\Modul02\Zadacha1Urok06\obj\x86\Debug\ZadOneUrokSix.csprojResolveAssemblyReference.cache

@@ -30,6 +30,11 @@ namespace ReadFromCommandLine
 
 			Console.WriteLine ("3-ти знак: " + test.Split (';')[2] );
 
+
+
+
+
+
 		}
 
 	}
