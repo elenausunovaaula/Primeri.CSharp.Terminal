@@ -1,0 +1,2 @@
+D:\aula\primeri.csharp.terminal\Modul03\BoolExplore2\bin\Release\BoolExplore2.exe
+D:\aula\primeri.csharp.terminal\Modul03\BoolExplore2\obj\x86\Release\BoolExplore2.exe

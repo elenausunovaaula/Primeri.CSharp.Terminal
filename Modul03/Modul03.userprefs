@@ -1,13 +1,17 @@
-﻿<Properties StartupConfiguration="{035E4F5F-199E-4B8A-8A4F-B5562DAFA0C7}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+﻿<Properties StartupConfiguration="{CCA10A80-8519-40B7-B7E0-77C151FC634A}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="D:\aula\primeri.csharp.terminal\Modul03\BoolExplore\Program.cs" line="24" column="47" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.BoolExplore PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BoolExplore\Program.cs">
+  <MonoDevelop.Ide.ItemProperties.BoolExplore2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BoolExplore2\Program.cs">
     <Files>
-      <File FileName="BoolExplore\Program.cs" Line="1" Column="1" />
+      <File FileName="BoolExplore\Program.cs" Line="24" Column="52" />
+      <File FileName="BoolExplore2\Program.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>
