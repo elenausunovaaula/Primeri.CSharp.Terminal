@@ -26,6 +26,21 @@ namespace ListExplore
 				_userinput = Console.ReadLine();
 
 				//Добавяме стойности
+				//add <int>
+
+				if (_userinput.ToLower().Contains( "add" ) )
+
+
+					try
+					{
+						int _add = 0;
+
+						if (int.TryParse(_userinput.Split(' ')[1], out _add))
+						{
+							_list.Add(_add);
+						}
+					}catch {
+			}
 
 
 				//Преглед на List
@@ -41,12 +56,17 @@ namespace ListExplore
 					if (i != _list.Count - 1) Console.Write(", ");
 				}
 
-				Console.WriteLine();
+				Console.WriteLine(" \n");
 
 			}
 
 
 				//Размер на List
+
+				if (_userinput.ToLower().Contains("size"))
+				{
+					Console.WriteLine("размер на списъка: " + _list.ToString() + "\n");
+				}
 
 			} while (_userinput != "exit");
 		}
