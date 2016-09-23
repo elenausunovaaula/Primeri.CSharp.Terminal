@@ -22,14 +22,33 @@ namespace Modul04
 			Console.WriteLine("===========================================");
 
 			//Тяло на таблицата
-			for (int i = 0; i < _table.Length /3; i++)		//общ брой 18 -> (int i = 0; i < _table.Length; i++) Console.WriteLine ();, _table.Length /3 разделя на 3; обхожда броя на редовете
-			{
-				for (int j = 0; j < 3 ; j++)				//обхожда броя на колоните
-				{
-					Console.Write(_table[i, j].PadRight(12));				              
-				}
 
-				Console.WriteLine();
+
+
+			//Пример с for
+			//for (int i = 0; i < _table.Length /3; i++)		//общ брой 18 -> (int i = 0; i < _table.Length; i++) Console.WriteLine ();, _table.Length /3 разделя на 3; обхожда броя на редовете
+			//{
+			//	for (int j = 0; j < 3 ; j++)				//обхожда броя на колоните
+			//	{
+			//		Console.Write(_table[i, j].PadRight(12));				              
+			//	}
+
+			//	Console.WriteLine();
+			//}
+
+
+			//Пример с while
+			int i = 0;
+
+			while (i < _table.Length / 3)
+			{
+				Console.WriteLine(
+					_table[i, 0].PadRight(12) +
+					_table[i, 1].PadRight(12) +
+					_table[i, 2].PadRight(12)
+					   );
+
+				i++;
 			}
 
 		}
