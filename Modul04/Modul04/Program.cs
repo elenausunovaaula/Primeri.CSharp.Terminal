@@ -6,12 +6,21 @@ namespace Modul04
 	{
 		public static void Main(string[] args)
 		{
-			//for (int i = 5; i > 0; i++) 		// нараства с едно -> 1,2,3,4,5
-			//for (int i = 5; i > 0; i--)			//намалява с едно -> 5,4,3,2,1
-			//for (int i = 0; i < 5; i++)			// 1,2,3,4,5
-			for (int i = 0; i <= 5; i+=2)			//през едно ->0,2,4
-				
-				Console.WriteLine( i.ToString () );
+			string[] _table = { "Иван", "Гошо", "Гергана" };
+
+
+			//Антетка на таблицата
+			Console.WriteLine("Име");
+			Console.WriteLine("=====================");
+
+			//Тяло на таблицата
+			for (int i = 0; i < _table.Length; i++)
+			{
+
+				//код на цикъла
+				Console.WriteLine(_table[i]);
+			}
+
 		}
 	}
 }
