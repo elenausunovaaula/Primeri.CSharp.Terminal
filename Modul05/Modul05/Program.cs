@@ -16,8 +16,35 @@ namespace Modul05
 			{
 				Console.Write("$ "); usercommand = Console.ReadLine();
 
-				if (usercommand.Contains("cmd01")) 	cmd01(usercommand);
-				if (usercommand.Contains("cmd02")) 	Console.WriteLine (cmd02 (usercommand) );
+				if (usercommand.Contains("cmd01")) cmd01(usercommand);
+				if (usercommand.Contains("cmd02")) Console.WriteLine(cmd02(usercommand));
+
+				if (usercommand.Contains("cmd03"))
+				{
+					double _a = 0;
+
+					if (cmd03(usercommand, out _a))
+					{
+						Console.WriteLine("a . a = " + _a.ToString());
+					}else
+					{
+						Console.WriteLine("Командата не е въведена коректно");
+					}
+				}
+
+				if (usercommand.Contains("cmd04"))
+				{
+					double _t = 5; _c = -2;
+					if (cmd04(ref _t))
+					{
+						Console.WriteLine(_t);
+					}
+					if (cmd04(ref _c))
+					{
+						Console.WriteLine(_t);
+					}
+						       
+				}
 
 			} while (usercommand != "exit");
 		}
@@ -32,13 +59,14 @@ namespace Modul05
 				{
 					Console.WriteLine("\nРезултат от " + _temp.ToString() + " ^2: " + (_temp * _temp).ToString());
 				}
+
 			}
 			catch
 			{
 			}
 		}
 
-		public static int cmd02 (string _input)      //cmd02 		--> 5*5*5 = 125
+		public static int cmd02(string _input)      //cmd02 		--> 5*5*5 = 125
 		{
 			int _temp = 0;
 
@@ -50,6 +78,35 @@ namespace Modul05
 
 			//Да се върнат параметрите
 		}
+
+			public static bool cmd03(string _input, out double _i)      //cmd03	45	-->45*45
+			{
+				try
+				{
+					string _p = _input.Split(' ')[1];
+					double __p = 0;
+				if (double.TryParse(_p, out _p))
+				{
+					_i = __p * __p;
+
+					return true;
+				}
+				}catch{ 		//error }expected ???
+				}
+				_i = 0;
+
+				return false;
+			}
+
+			public static bool cmd04(ref double _i)
+			{
+					double _temp = _i;
+				_i = _i * _i;
+
+				return (_temp > 0);
+			}
+				
 	}
 }
+
 
