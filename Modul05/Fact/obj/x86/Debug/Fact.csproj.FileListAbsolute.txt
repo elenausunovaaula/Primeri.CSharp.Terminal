@@ -1,0 +1,4 @@
+D:\aula\primeri.csharp.terminal\Modul05\Fact\bin\Debug\Fact.exe
+D:\aula\primeri.csharp.terminal\Modul05\Fact\bin\Debug\Fact.pdb
+D:\aula\primeri.csharp.terminal\Modul05\Fact\obj\x86\Debug\Fact.exe
+D:\aula\primeri.csharp.terminal\Modul05\Fact\obj\x86\Debug\Fact.pdb
