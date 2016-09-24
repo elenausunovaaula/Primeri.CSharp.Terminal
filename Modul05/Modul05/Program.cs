@@ -34,7 +34,7 @@ namespace Modul05
 
 				if (usercommand.Contains("cmd04"))
 				{
-					double _t = 5; _c = -2;
+					double _t = 5, _c = -2;
 					if (cmd04(ref _t))
 					{
 						Console.WriteLine(_t);
@@ -46,25 +46,32 @@ namespace Modul05
 						       
 				}
 
-			} while (usercommand != "exit");
-		}
-
-		public static void cmd01(string _input)      //cmd01 5 		---> 5 ^2 = 25
-		{
-			try
-			{
-				double _temp = 0;
-
-				if (double.TryParse(_input.Split(' ')[1], out _temp))
+				if (usercommand.Contains("cmd05"))		//да разберем колко четни числа имаме
 				{
-					Console.WriteLine("\nРезултат от " + _temp.ToString() + " ^2: " + (_temp * _temp).ToString());
+					Console.WriteLine("Брой четни числа: " + cmd05(usercommand).Length.ToString());
 				}
 
-			}
-			catch
-			{
-			}
+
+			} while (usercommand != "exit");
+
 		}
+
+			public static void cmd01(string _input)      //cmd01 5 		---> 5 ^2 = 25
+			{
+				try
+				{
+					double _temp = 0;
+
+					if (double.TryParse(_input.Split(' ')[1], out _temp))
+					{
+						Console.WriteLine("\nРезултат от " + _temp.ToString() + " ^2: " + (_temp * _temp).ToString());
+					}
+
+				}
+				catch
+				{
+				}
+			}
 
 		public static int cmd02(string _input)      //cmd02 		--> 5*5*5 = 125
 		{
@@ -85,7 +92,7 @@ namespace Modul05
 				{
 					string _p = _input.Split(' ')[1];
 					double __p = 0;
-				if (double.TryParse(_p, out _p))
+				if (double.TryParse(_p, out __p))
 				{
 					_i = __p * __p;
 
@@ -100,12 +107,37 @@ namespace Modul05
 
 			public static bool cmd04(ref double _i)
 			{
-					double _temp = _i;
+				double _temp = _i;
 				_i = _i * _i;
 
 				return (_temp > 0);
 			}
-				
+
+			public static string[]  cmd05 ( string  _input )		//ERROR 'MainClass.cmd05(string)':not all code paths return a value
+			{
+				try
+					{
+					int _border = 0;
+					string _temp = "";
+
+						if (int.TryParse(_input.Split(' ')[1], out _border) )
+						{
+							for (int i = 0; i < _border; i++)
+							{
+								if (i % 2 == 0) _temp += i.ToString();
+								if (i != _border - 1 && i % 2 == 0) _temp += ",";
+
+							}
+
+							Console.WriteLine(_temp);       //само за проверка
+
+							return _temp.Split(',');
+
+							}
+					}catch{
+					}
+					return new string[1] { "0" };
+			}
 	}
 }
 
